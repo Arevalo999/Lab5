@@ -1,0 +1,19 @@
+import java.util.*
+internal object AgeGroup {
+    @JvmStatic fun main(args:Array<String>) {
+        val input = Scanner(System.`in`)
+        println("Enter the age group : ")
+        val group = input.nextInt()
+        if (group >= 0 && group <= 12)
+            println("Child")
+        else if (group >= 13 && group <= 18)
+            println("Teenager")
+        if (group >= 0 && group <= 20)
+            println("Family")
+        if (group >= 19 && group <= 60)
+            println("Adult")
+        if (group >= 60 && group <=100)
+            println("Senior")
+    }
+}
+
