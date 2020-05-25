@@ -1,0 +1,12 @@
+package com.zetcode
+
+import java.io.File
+
+fun main() {
+
+    val fileName = "P3.txt"
+
+    val content = File("P3.txt").readText()
+
+    println(content)
+}
