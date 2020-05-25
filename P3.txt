@@ -1,0 +1,13 @@
+fun main() {
+    var cardPoints = 7000
+    val cardLevel: String = when {
+        cardPoints in 0..999 -> "pearl"
+
+        cardPoints in 1000..4999 -> "silver"
+
+        cardPoints in 5000..9999 -> "gold"
+
+        else -> "platinum"
+
+    }
+}
