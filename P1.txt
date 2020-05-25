@@ -1,0 +1,18 @@
+import java.util.Scanner
+fun main() {
+    val input = Scanner(System.`in`)
+    println("Enter Integer Input  X: ")
+    val x = input.nextInt()
+    println("Enter Integer Input  Y: ")
+    val y = input.nextInt()
+
+    println(compareInt(x,y));
+}
+
+fun compareInt(x: Int, y: Int): Int {
+    return when {
+        x == y -> 0;
+        x > y -> -1;
+        else -> 1;
+    }
+}
